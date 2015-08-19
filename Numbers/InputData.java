@@ -4,22 +4,22 @@ public class InputData
     {
         public static void main( String[] args )
             {
-            int sum = 0;
-            int sub = 0;
-            int div = 0;
-            int mult = 0;
-            int moddiv = 0;
+            double sum = 0;
+            double sub = 0;
+            double div = 0;
+            double mult = 0;
+            double moddiv = 0;
             
          
             String input = JOptionPane.showInputDialog( "Please give me a number" );
             
             System.out.println( input );
             
-            int num = Integer.parseInt( input );
+            double num = Double.parseDouble( input );
             
             String inpoo = JOptionPane.showInputDialog( "Please give me another number" );
             
-            int nom = Integer.parseInt( inpoo );
+            double nom = Double.parseDouble( inpoo );
             
             sum = nom + num;
             sub = num - nom;
@@ -28,11 +28,11 @@ public class InputData
             moddiv = num % nom;
             
             
-            System.out.println( sum );
-            System.out.println( sub );
-            System.out.println( div );
-            System.out.println( mult );
-            System.out.println( moddiv );
+            System.out.println( input + "+" +inpoo + "=" +sum );
+            System.out.println( input + "-" +inpoo + "=" +sub );
+            System.out.println( input + "*" +inpoo + "=" +mult );
+            System.out.println( input + "/" +inpoo + "=" +div );
+            System.out.println( input + "%" +inpoo + "=" +moddiv );
             
         } //end method main
     } //end class InputData
