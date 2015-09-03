@@ -1,8 +1,8 @@
 import javax.swing.JOptionPane;
 
-public class InputData
+public class Fundamental1
     {
-        public static void man( String[] args )
+        public static void main( String[] args )
         {
             String favf = JOptionPane.showInputDialog( "Please give me your favorite food" );
             
