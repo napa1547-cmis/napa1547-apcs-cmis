@@ -24,7 +24,7 @@ public class Test1
                     int[] arrayt = {numnum};
                     for (int t = 0; t < arrayt.length; t++)
                     {
-                        System.out.print("E");
+                        System.out.print("+E+");
                     } //end for
                     System.out.print(array[i]);
                 } // end if
@@ -34,7 +34,7 @@ public class Test1
                     int[] arrayf = {numbum};
                     for (int t = 0; t < arrayf.length; t++)
                     {
-                        System.out.print("O");
+                        System.out.print("+O+");
                     } //end for
                     System.out.print(array[i]);
                 } // end if
