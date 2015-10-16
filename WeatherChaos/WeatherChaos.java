@@ -13,45 +13,61 @@ public class WeatherChaos
         String outputday;
         String word;
         String tempd;
-        int chilly = new int[16];
-        int comfortable = new int[31];
-        int hot = new int[40];
         int min = -100;
         int max = 99;
-        
-    for ( int i = 0; i < randomtemps.length; i++ )
+        int sum = 0;
+    if( input < 32 && input > 0 )
+    { 
+       for ( int i = 0; i < randomtemps.length; i++ )
         {
             randomtemp = (int)(Math.random() * 200) - 100;
             randomtemps[i] = randomtemp;
             days[randomtemp]++;
             outputday = "Day" + "\n" + days;
         }
-    for ( int i = 0; i < randomtemps.length; i++ )
+       for ( int i = 0; i < randomtemps.length; i++ )
         {
             output = "Temperature Swing"+ "\n" + "";
-            tswing = (Math.abs()*(randomtemps[i] - randomtemps[i+1]));
+            tswing = (Math.abs()*(randomtemps[i-1] - randomtemps[i]));
             output += tswing;
         }
-        for ( int i = 0; i < randomtemps.length; i++ )
+       for ( int i = 0; i < randomtemps.length; i++ )
         {
-            outputd = "Description"+ "\n" + "";
+            outputd = "Description: "+ "";
             thistemp = randomtemp[i];
-            if (thistemp[i] < 0)
+            if(thistemp[i]<=0)
+                    {
+                        outputd += "\t"+ "Freezing"  + "\n"; 
+                    }
+            if(thistemp[i]>0 && thisNum <=15 )
+                    {
+                        outputd += "\t"+ "Chilly"  + "\n"; 
+                    }
+            if(thistemp[i]>=16 && thisNum <=30 )
+                    {
+                        outputd += "\t"+ "Comfortable"  + "\n"; 
+                    }
+            if(thistemp[i]>=31 && thisNum <45 )
+                    {
+                        outputd += "\t"+ "Hot"  + "\n"; 
+                    }
+            if(thistemp[i]>=45)
+                    {
+                        outpudt += "\t"+ "ARDGDGD!"  + "\n"; 
+                    }
+                }
+       if (thistemp[i] <= min)
             {
-            word = freezing;
+                min = thistemp;
         }
-            if (thistemp[i] < chilly[])
+       if (thistemp[i] >= max)
             {
-                word = chilly;
+                max = thistemp;
         }
-            if (thistemp[i] < comfortable[])
-            {
-                word = comfortable;
-        }
-            if (thistemp[i] < hot[])
-            {
-                word = hot;
-        }
+        System.out.println(outputd);
+    }
+    else
+    {
             if (thistemp[i] <= min)
             {
                 min = thistemp;
@@ -63,9 +79,11 @@ public class WeatherChaos
         
         outputd += word;
     }
+}
             System.out.println(outputday + output + outputd);
             System.out.println("MIN: " + min);
             System.out.println("MAX: " + max);
+            System.out.println("AVG: " + "I would use (double) sum / (double) input but IM OUT OF TIME NOOOO i didnt get to make my sum T_T");
+            System.out.println("SWING: " + tswing);
+            System.out.println("SWINGDAYS: " + days "and day" + days);
         }
-    } // end
-            
