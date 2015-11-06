@@ -25,7 +25,7 @@ public class BlackJack
         for (int x = 0; x < totalCard.length; x++)
         {
 
-            MyCard[] cardsDrawn = new MyCard[3];
+            MyCard[] cardsDrawn = new MyCard[2];
             int score = 0;
 
             for( int i = 0; i < cardsDrawn.length; i++)
@@ -51,7 +51,7 @@ public class BlackJack
             {
                 System.out.print("\t");
             }
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 System.out.print( totalCard[x][i] + "\t");
             }
