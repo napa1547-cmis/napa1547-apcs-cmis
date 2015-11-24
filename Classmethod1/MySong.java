@@ -1,3 +1,4 @@
+import javax.swing.JOptionPane;
 public class MySong
 {
     private String title;
@@ -5,6 +6,9 @@ public class MySong
     private boolean IsItGood; 
     private int yearReleased;
     private int length;
+    private String converted;
+    String user = JOptionPane.showInputDialog("whats the username?");
+    int pass = Integer.parseInt(JOptionPane.showInputDialog("whats the pass?"));
     public MySong()
     {
         title = new String ("CmisSong");
@@ -30,22 +34,20 @@ public class MySong
         return converted;
     } // end convert method
     
-    public MySong(String title, int stanzas, boolean IsItGood)
+    public void setReleaseYear(int year)
     {
-        this.title = title;
-        this.stanzas = stanzas;
-        this.IsItGood = IsItGood;
-        this.yearReleased = yearReleased;
-        this.length = length;
-    } // end alternative constructer
+        if (user.equals("napa") && pass == (13))
+        {
+            this.yearReleased = year;
+        }
+    }
     
     public String toString()
     {
         String output = new String();
         output = "Title of Song is: " + title + "\n" +
                  "Number of stanzas are: " + stanzas + "\n" +
-                 "Is the Song Good? " + IsItGood + "\n" +
-                 "Song Length: " + converted + "\n" + 
+                 "Is the Song Good? " + IsItGood + "\n" + 
                  "Year released: " + yearReleased;
         return output;
     } // end to string

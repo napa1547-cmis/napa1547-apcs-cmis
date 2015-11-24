@@ -36,7 +36,7 @@ public class MyClock
     
     public int convertToSec()
     {
-        converted = ( this.hours*60 ) + ( this.minutes*60 ) + (this.seconds);
+        converted = ( this.hours*3600 ) + ( this.minutes*60 ) + (this.seconds);
         return converted;
     } // end converting to secs
     

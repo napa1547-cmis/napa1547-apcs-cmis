@@ -7,17 +7,18 @@ public class MyClockDriver
         int minutes = Integer.parseInt(JOptionPane.showInputDialog("whats the minute?"));
         int seconds = Integer.parseInt(JOptionPane.showInputDialog("whats the second?"));
         
-        Myclock.Time = new Time();
-        Myclock.convertToSec();
-        System.out.println(clock);
+        MyClock clock1 = new MyClock();
+        clock1.setTime(13, 23, 33);
+        clock1.convertToSec();
+        System.out.println(clock1);
         
-        Myclock.setTime(3,33,33);
-        Myclock.convertToSec();
-        System.out.println(clock);
+        clock1.setTime(3,33,33);
+        clock1.convertToSec();
+        System.out.println(clock1);
         
-        Myclock.convertDayLightSavings(1);
-        Myclock.coonvertToSec();
-        System.out.println(clock);
+        clock1.convertDaylightSaving(1);
+        clock1.convertToSec();
+        System.out.println(clock1);
        
     }// end main
 }// end class
