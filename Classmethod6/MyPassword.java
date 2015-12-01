@@ -12,14 +12,14 @@ public class MyPassword
             {
                 symbolreq =+ 1;
             }
-            if (password.length() < 6 || symbolreq <=0)
-            {
-                System.out.println("Your password does not meet the requirements, please re-run the program and meet the reqs");
-            }
-            else
-            {
-                System.out.println("Thank you! your password has been set.");
-            }
+        }
+        if (password.length() < 6 || symbolreq <=0)
+        {
+            System.out.println("Your password does not meet the requirements, please re-run the program and meet the reqs");
+        }
+        else
+        {
+            System.out.println("Thank you! your password has been set.");
         }
     }
 }

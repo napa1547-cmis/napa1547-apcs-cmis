@@ -23,7 +23,7 @@ public class MyStudent
 
     }// end zero argument constructer Mystudents
 
-    public MyStudent(String fname, String lname, double gradeEnglish, double gradeMath, double gradeScience, double gradeFineArts, double gradeSocialScience, String totalgrade)
+    public MyStudent(String fname, String lname, int grade, double gradeEnglish, double gradeMath, double gradeScience, double gradeFineArts, double gradeSocialScience, String totalgrade)
 
     {
         this.fname = fname;

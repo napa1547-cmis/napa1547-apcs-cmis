@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
 comment0.target=MyStudent()
-comment1.params=fname\ lname\ gradeEnglish\ gradeMath\ gradeScience\ gradeFineArts\ gradeSocialScience
-comment1.target=MyStudent(java.lang.String,\ java.lang.String,\ double,\ double,\ double,\ double,\ double)
+comment1.params=fname\ lname\ grade\ gradeEnglish\ gradeMath\ gradeScience\ gradeFineArts\ gradeSocialScience
+comment1.target=MyStudent(java.lang.String,\ java.lang.String,\ int,\ double,\ double,\ double,\ double,\ double)
 comment2.params=
 comment2.target=double\ calcGPA()
 comment3.params=GradeEnglish\ GradeMath\ GradeScience\ GradeFineArts\ GradeSocialScience

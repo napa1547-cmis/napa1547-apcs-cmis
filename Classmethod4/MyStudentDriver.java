@@ -4,8 +4,8 @@ public class MyStudentDriver
     public static void main(String[] args)
     {
 
-        MyStudent student = new MyStudent("Joe","Senior",4.0,4.0,4.0,4.0,4.0,"A");
-        MyStudent student1 = new MyStudent("Bob","Junior",4.0,4.0,4.0,4.0,4.0,"A");
+        MyStudent student = new MyStudent("Joe","Senior",12,4.0,4.0,4.0,4.0,4.0,"A");
+        MyStudent student1 = new MyStudent("Bob","Junior", 11,3.0,3.0,1.0,4.0,4.0,"B");
         System.out.println(student);
         System.out.println(student1);
 

@@ -21,7 +21,7 @@ public class MyStudent
 
     }// end zero argument constructer Mystudents
     
-    public MyStudent(String fname, String lname, double gradeEnglish, double gradeMath, double gradeScience, double gradeFineArts, double gradeSocialScience)
+    public MyStudent(String fname, String lname, int grade, double gradeEnglish, double gradeMath, double gradeScience, double gradeFineArts, double gradeSocialScience)
     
     {
         this.fname = fname;
@@ -55,11 +55,11 @@ public class MyStudent
     {
         this.fname = fname;
         this.lname = lname;
-        this.gradeEnglish=gradeEnglish;
-        this.gradeMath=gradeMath;
-        this.gradeScience=gradeScience;
-        this.gradeFineArts=gradeFineArts;
-        this.gradeSocialScience=gradeSocialScience;
+        this.classGrades[0] = GradeEnglish;
+        this.classGrades[1] = GradeMath;
+        this.classGrades[2] = GradeScience;
+        this.classGrades[3] = GradeFineArts;
+        this.classGrades[4] = GradeSocialScience;
     }
     
     public String toString()
