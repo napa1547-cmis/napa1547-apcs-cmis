@@ -26,6 +26,11 @@ public class MyPod
     public String toString()
     {
         String output = new String();
+        System.out.println("Now printing using for-each loop:");
+        for (String song : songLibrary)
+        {
+            System.out.println(song);
+        } // end for each loop
         output = "The Pod color is: " + color + " with a memory capacity of: " + memory + "GB" + " and contains 3 songs, called: " 
         + songLibrary[0] + "" + songLibrary[1] + ""  + songLibrary[2];
         return output;
