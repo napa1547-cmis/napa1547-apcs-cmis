@@ -26,7 +26,7 @@ public class MyPod2
         output = "The Pod color is: " + color + " with a memory capacity of: " + memory + "GB" + " and contains " + songLibrary.size() +  " songs, called: "; 
         for (String song : songLibrary)
         {
-            System.out.println(song);
+            output += song;
         } // end for each loop
         return output;
     } // end toString() method

@@ -28,6 +28,7 @@ public class Roster
         String output = new String();
         for (MyStudent names: students)
         {
+            System.out.println(names);
             output = "The student with the highest GPA is: " + findStudentWithMaxGPA();
         } // end for loooop
         return output; 

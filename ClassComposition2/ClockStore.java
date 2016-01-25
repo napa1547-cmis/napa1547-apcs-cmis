@@ -1,4 +1,4 @@
-Spublic class ClockStore
+public class ClockStore
 {
     private MyClock clocksInStock[];
     private int clock1;
@@ -31,9 +31,7 @@ Spublic class ClockStore
         String output = new String();
         for (MyClock clock : clocksInStock)
         {
-            System.out.println(clock);
-            System.out.println("and the index of the clock with the most seconds is:" + bigClock);
-            return output;
+            output = "and the index of the clock with the most seconds is:" + bigClock;
         } // end for each loop
         return output; 
     } // end to string
