@@ -25,6 +25,7 @@ public class MyArray2
             {
                 sum += MyArray[rows][cols];
             } // end cols for
+            System.out.println("sum: " + sum);
         }  
         for (int rows = 0; rows < MyArray.length;rows ++ )
         {

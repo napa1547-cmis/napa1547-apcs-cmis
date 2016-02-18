@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyGPSSoftware()
+comment1.params=
+comment1.target=int\ getLength()
+comment2.params=start\ finish
+comment2.target=boolean\ Level(int,\ int)
+comment3.params=start\ finish
+comment3.target=boolean\ Difficulty(int,\ int)
+comment4.params=Trail
+comment4.target=MyGPSSoftware(java.util.ArrayList)
+comment5.params=newMarker
+comment5.target=void\ addMarker(MyMarker)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
